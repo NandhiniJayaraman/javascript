@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style  >
+
+body{
+    background-color: aqua;
+}
+.input{
+    background-color: brown;
+    height: 100px;
+    width: 100px;
+    border: 20px;
+    color: chartreuse;
+}
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <div class="inputdiv">
+        <input type="text"  id="input" placeholder="enter the temp">
+    </div>
+    <div >
+        <button type="submit" onclick="farenheit()">convert the farenheit</button>
+    </div>
+    <div>
+        <button type="submit" onclick="celsius()">convert the celcius</button>
+    </div>
+    <div id="display">
+
+    </div>
+    <script >
+
+function celsius(){
+    let n=Number(document.getElementById("input").value)
+    let f=((n*(9/5)+32))
+    let result=document.getElementById("display")
+    result.innerHTML("Farenheit:",f)
+    }
+// console.log(celsius(72))
+function farenheit(){
+    let n=Number(document.getElementById("input").value)
+    let c=((n*(5/9)+32))
+    let result=document.getElementById("display")
+    result.innerHTML("Celcius:",f)
+    }
+    </script>
+</body>
+</html>

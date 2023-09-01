@@ -1,0 +1,10 @@
+body{
+    background-color: aqua;
+}
+.inputdiv{
+    background-color: brown;
+    height: 100px;
+    width: 100px;
+    border: 20px;
+    color: chartreuse;
+}
