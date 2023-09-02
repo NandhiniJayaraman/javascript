@@ -3,22 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style  >
+    <style>
 
 body{
     background-color: aqua;
 }
-.input{
-    background-color: brown;
-    height: 100px;
-    width: 100px;
-    border: 20px;
-    color: chartreuse;
+.div{
+    background-color: rgb(115, 21, 204);
+    margin: 10px;
+    border-color: rgb(236, 234, 234);
 }
+
     </style>
     <title>Document</title>
 </head>
 <body>
+    <h2>convert the farenheit and celcius</h2>
     <div class="inputdiv">
         <input type="text"  id="input" placeholder="enter the temp">
     </div>
@@ -31,21 +31,23 @@ body{
     <div id="display">
 
     </div>
-    <script >
+    <script src="cms.js" >
 
-function celsius(){
-    let n=Number(document.getElementById("input").value)
-    let f=((n*(9/5)+32))
-    let result=document.getElementById("display")
-    result.innerHTML("Farenheit:",f)
-    }
-// console.log(celsius(72))
-function farenheit(){
-    let n=Number(document.getElementById("input").value)
-    let c=((n*(5/9)+32))
-    let result=document.getElementById("display")
-    result.innerHTML("Celcius:",f)
-    }
+    function farenheit(){
+        n=Number(document.getElementById(input))
+        f=((n*(9/5)+32))
+        console.log(f)
+        result=document.getElementById(display)
+        result.innerHTML("Farenheit:",f)
+        }
+    // console.log(celsius(72))
+    function celcius(){
+        n=Number(document.getElementById(input))
+        c=((n*(5/9)+32))
+        console.log(c)
+        result=document.getElementById(display)
+        result.innerHTML("Celcius:",c)
+        }
     </script>
 </body>
 </html>
