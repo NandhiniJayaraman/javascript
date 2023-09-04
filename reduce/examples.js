@@ -6,6 +6,6 @@ total=a.reduce((m,n)=>{
 })
 console.log(total)
 // anoynoms function
-t=a.reduce(fuction(n,m){
+t=a.reduce(function(n,m){
     return n+m}
 )

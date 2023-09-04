@@ -6,3 +6,4 @@ sum=a.forEach(function add(n){
     console.log(sum1)
 })
 
+
