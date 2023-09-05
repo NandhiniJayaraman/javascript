@@ -9,15 +9,13 @@ for(i=0;i<a.length;i++){
     }
 }
 console.log(result)
-// using foreach
-re=''
+// using foreac
 a='nandhinijayaram'
-a.forEach((e,index)=>{
-    if(e%2==1){
-        re=re+'Z'
-    }
-    else{
-        re=re+e
+charArray=a.split("")
+charArray.forEach((e,index)=>{
+    if(index %2==1){
+        charArray[index]='Z'
     }
 })
-console.log(re)
+str=charArray.join("")
+console.log(str)
