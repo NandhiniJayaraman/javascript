@@ -14,4 +14,24 @@ for i in a:
 if(found==False):
     print('No')
 else:
-    print('Yes')     
+    print('Yes')  
+    # password generete
+n=8188
+for i in range(0,4):
+    n1=int(input('enter the 4 digit number:'))
+    if(n==n1):
+        print('the pin is correct')
+        break
+    else:
+        print('the pin is incorrect')
+else:
+    print('your chance is finish') 
+    # palindrome
+a=input('enter the string')
+b=''
+for i in range(len(a)-1,-1,-1):
+    b=b+a[i]
+if(a==b):
+    print('palindrome')
+else:
+    print('not a palindrome')               
