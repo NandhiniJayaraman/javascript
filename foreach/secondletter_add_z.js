@@ -1,0 +1,23 @@
+a='nandhinijayaraman'
+result=''
+for(i=0;i<a.length;i++){
+    if(i%2==1){
+        result=result+'Z'
+    }
+    else{
+        result=result+a[i]
+    }
+}
+console.log(result)
+// using foreach
+re=''
+a='nandhinijayaram'
+a.forEach((e,index)=>{
+    if(e%2==1){
+        re=re+'Z'
+    }
+    else{
+        re=re+e
+    }
+})
+console.log(re)
